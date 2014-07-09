@@ -1,4 +1,3 @@
-<?php 
 class Pinyin {
 
         private $pinyin = array(
@@ -527,10 +526,10 @@ class Pinyin {
             } else {
                 $py .= $s[$i];
             }
-            if (strlen($py) >= 20)
-                return $py;
+            //if (strlen($py) >= 20)
+              //  return $py;
         }
-        return $py;
+        return trim($py,'_');
     }
 
     private function asi2py($a) {
